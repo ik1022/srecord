@@ -42,7 +42,7 @@ srecord::input_filter_checksum::input_filter_checksum(
     if (width < 1)
         width = 1;
     else if (width > 8)
-        width = length;
+        width = 8;
 }
 
 
