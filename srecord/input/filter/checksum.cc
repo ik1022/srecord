@@ -41,7 +41,7 @@ srecord::input_filter_checksum::input_filter_checksum(
         length = sizeof(sum_t);
     if (width < 1)
         width = 1;
-    else if (width > length)
+    else if (width > 8)
         width = length;
 }
 
