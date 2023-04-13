@@ -326,7 +326,7 @@ srecord::arglex_tool::get_address_nbytes_width(const char *name,
         nbytes = get_number("byte count", 1, 8);
         if (can_get_number())
         {
-            width = get_number("width", 1, nbytes);
+            width = get_number("width", 1, 8);
         }
     }
     if ((uint64_t)address + nbytes > (1LL << 32))
